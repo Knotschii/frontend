@@ -8,7 +8,7 @@ const Books = () => {
     useEffect(() => {
         const fetchAllBooks = async () => {
             try{
-                const res = await axios.get('http://localhost:8080/books/1')
+                const res = await axios.get('http://localhost:8080/books/')
                 console.log(res)
             }catch(err){
                 console.log(err)
